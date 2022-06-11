@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+    }
+    img{
+      border: 0.5rem;
+      border-style: double;
+    }
+   p{
+     text-align: justify;
+   }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="film Raiders of The Lost Ark">
+        <h3>Raiders Of The Lost Ark</h3>
+        <p>Dr. Indiana Jones, a renowned archeologist and expert in the occult, is hired by the U.S. Government to find the ark of
+        the covenant, which is believed to still hold the Ten Commandments. Unfortunately, Hitler's agents are also after the
+        ark. Indy and his ex-flame Marion escape from various close scrapes in a quest that takes them from Nepal to Cairo.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="film Indiana Jones And The Temple of Dom">
+        <h3>Indiana Jones And The Temple of Dom</h3>
+        <p>In 1935, Indiana Jones arrives in India, still part of the British Empire, and is asked to find a mystical stone. He
+        then stumbles upon a secret cult committing enslavement and human sacrifices in the catacombs of an ancient palace.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="film Indiana Jones And The Last Crusade">
+        <h3>Indiana Jones And The Last Crusade</h3>
+        <p>In 1938, after his father Professor Henry Jones, Sr. goes missing while pursuing the Holy Grail, Professor Henry
+        'Indiana' Jones, Jr. finds himself up against Adolf Hitler's Nazis again to stop them from obtaining its powers.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
